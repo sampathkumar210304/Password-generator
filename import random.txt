@@ -1,0 +1,49 @@
+import random
+
+name=""
+number=""
+
+name_list=[]
+number_list=[]
+SP=["!", "@", "#", "$", "%", "^", "&", "*","(", ")", "~", "-", "_", "+", "="]
+
+print("welcome to the strong password Generator")
+
+name=input("enter any word equal to or more than 8 characters")
+
+
+number=input("Enter a number more than or equal to 4 digits")
+
+
+#for loop
+for i in name():
+    name_list.append(i)
+
+for j in number():
+    number_list.append(i)
+
+for j in SP():
+    number_list.append(j)
+
+
+    random.shuffle(name_list)
+    random.shuffle(number_list)
+    random.random(SP)
+
+
+list=[]
+
+
+    for i,j in zip(name_list,number_list):
+         list.append(i+j)
+
+
+combine="".join(list) 
+
+
+
+print(combine)
+
+
+
+
